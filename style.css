@@ -47,17 +47,54 @@ body {
 .colon-dot {
     width: 15px;
     height: 15px;
-    background-color: red;
+    background-color: rgba(255,0,0,0.15);
     border-radius: 50%;
     transition: 0.1s;
 }
 
-.row {
-    background-color: red;
+.row1, .row2, .row3 {
+    transition: 0.1s;
+    display: flex;
+}
+
+#seg1, #seg4, #seg7 {
     width: 60px;
     height: 20px;
+    background-color: rgba(255,0,0,0.15);
+}
+.b {
+    border: 10px solid rgba(255,0,0,0.15);
     transition: 0.1s;
 }
+
+#b1 {
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+#b2 {
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+
+#b3 {
+    border-left-color: transparent;
+}
+
+#b4 {
+    border-right-color: transparent;
+}
+
+#b5 {
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+
+#b6 {
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+
 
 .between {
     width: 100%;
@@ -68,7 +105,7 @@ body {
 }
 
 .col {
-    background-color: red;
+    background-color: rgba(255,0,0,0.15);
     width: 20px;
     height: 60px;
     z-index: 1;
@@ -99,7 +136,7 @@ body {
         transition: 0.1s;
     }
 
-    .row {
+    #seg1, #seg4, #seg7 {
         width: 48px;
         height: 16px;
         transition: 0.1s;
@@ -114,6 +151,11 @@ body {
         width: 16px;
         height: 48px;
         z-index: 1;
+        transition: 0.1s;
+    }
+
+    .b {
+        border: 8px solid;
         transition: 0.1s;
     }
 
