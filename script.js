@@ -132,7 +132,7 @@ function setDigit(elementId, number) {
         turnOnSeg(elementId, [1, 3, 6]);
     }
     if (number === 8) { 
-       turnOnSeg(elementId, [1, 2, 4, 5, 6, 7]);
+       turnOnSeg(elementId, [1, 2, 3, 4, 5, 6, 7]);
    }
     if (number === 9) { 
         turnOnSeg(elementId, [1, 2, 3, 4, 6, 7]);
@@ -159,7 +159,7 @@ function updateClock() {
 
     // Run our function to update the clock accordingly
     // Update first and second digit of hour
-    setDigit('hour-first-digit', firstDigitHour);
+    if (firstDigitHour!==0) setDigit('hour-first-digit', firstDigitHour);
     setDigit('hour-second-digit', secondDigitHour);
     // Update the first and second digit of minute
     setDigit('minutes-first-digit', firstDigitMinutes);
