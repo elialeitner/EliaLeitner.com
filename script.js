@@ -159,7 +159,7 @@ function updateClock() {
 
     // Run our function to update the clock accordingly
     // Update first and second digit of hour
-    if (firstDigitHour!==0) setDigit('hour-first-digit', firstDigitHour);
+    setDigit('hour-first-digit', firstDigitHour);
     setDigit('hour-second-digit', secondDigitHour);
     // Update the first and second digit of minute
     setDigit('minutes-first-digit', firstDigitMinutes);
