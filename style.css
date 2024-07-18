@@ -64,34 +64,49 @@ body {
     transition: 0.1s;
 }
 .b {
-    border: 10px solid rgba(255,0,0,0.15);
+    border-width: 10px;
     transition: 0.1s;
 }
 
+
 #b1 {
+    border-bottom-color: rgba(255,0,0,0.15);
+    border-right-color: rgba(255,0,0,0.15);
     border-top-color: transparent;
     border-left-color: transparent;
 }
 
 #b2 {
+    border-bottom-color: rgba(255,0,0,0.15);
+    border-left-color: rgba(255,0,0,0.15);
     border-top-color: transparent;
     border-right-color: transparent;
 }
 
 #b3 {
+    border-bottom-color: rgba(255,0,0,0.15);
+    border-right-color: rgba(255,0,0,0.15);
+    border-top-color: rgba(255,0,0,0.15);
     border-left-color: transparent;
 }
 
 #b4 {
+    border-bottom-color: rgba(255,0,0,0.15);
+    border-left-color: rgba(255,0,0,0.15);
+    border-top-color: rgba(255,0,0,0.15);
     border-right-color: transparent;
 }
 
 #b5 {
+    border-right-color: rgba(255,0,0,0.15);
+    border-top-color: rgba(255,0,0,0.15);
     border-bottom-color: transparent;
     border-left-color: transparent;
 }
 
 #b6 {
+    border-left-color: rgba(255,0,0,0.15);
+    border-top-color: rgba(255,0,0,0.15);
     border-bottom-color: transparent;
     border-right-color: transparent;
 }
