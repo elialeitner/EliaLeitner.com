@@ -3,140 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A simple digital clock">
-    <title>Digital Clock</title>
+    <meta name="description" content="A simple website">
+    <title>Elia Leitner</title>
     <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap" rel="stylesheet">
 </head>
+
 <body>
-
-    <div class="container">
-
-            <div id="hour-display">
-
-                <div class="digit" id="hour-first-digit">
-                    
-                    <div class="row1">
-                        <div class="b" id="b1"></div>
-                        <div id="seg1"></div>
-                        <div class="b" id="b2"></div>
-                    </div>
-                    <div class="between">
-                        <div class="col" id="seg2"></div>
-                        <div class="col" id="seg3"></div>
-                    </div>
-                    <div class="row2">
-                        <div class="b" id="b3"></div>
-                        <div id="seg4"></div>
-                        <div class="b" id="b4"></div>
-                    </div>
-                    <div class="between">
-                        <div class="col" id="seg5"></div>
-                        <div class="col" id="seg6"></div>
-                    </div>
-                    <div class="row3">
-                        <div class="b" id="b5"></div>
-                        <div id="seg7"></div>
-                        <div class="b" id="b6"></div>
-                    </div>
-
+    
+    <div class="container"> 
+        <img src="images/EliaTea.JPG" id ="image"></img>
+        <h1> Hi, I'm Elia!</h1>
+        <p>I like soup and my dog Louie. 
+            This website is for me to practice my coding skills. 
+            Feel free to look around and get a feel for the kind of stuff I'm into.</p>        
+        <h3><b>Some things I made:</b></h3>
+        
+        <div class = "button-container">
+            
+            <button id="Snake" onclick="window.location.href='snake-game/index.html'">
+                <div class="picture">
+                    <img src="images/Snake.png" class = "image"></img>
                 </div>
-
-                <div class="digit" id="hour-second-digit">
-
-                    <div class="row1">
-                        <div class="b" id="b1"></div>
-                        <div id="seg1"></div>
-                        <div class="b" id="b2"></div>
-                    </div>
-                    <div class="between">
-                        <div class="col" id="seg2"></div>
-                        <div class="col" id="seg3"></div>
-                    </div>
-                    <div class="row2">
-                        <div class="b" id="b3"></div>
-                        <div id="seg4"></div>
-                        <div class="b" id="b4"></div>
-                    </div>
-                    <div class="between">
-                        <div class="col" id="seg5"></div>
-                        <div class="col" id="seg6"></div>
-                    </div>
-                    <div class="row3">
-                        <div class="b" id="b5"></div>
-                        <div id="seg7"></div>
-                        <div class="b" id="b6"></div>
-                    </div>
-
+                <div class="text">Snake</div>
+             </button>
+ 
+             <button id="AnalogClock" onclick="window.location.href='analog-clock/index.html'">
+                 <div class="picture">
+                    <img src="images/Analog Clock.png" class = "image"></img>
                 </div>
-
-            </div>
-
-            <div id="colon">
-                <div class="colon-dot"></div>
-                <div class="colon-dot"></div>
-            </div>
-
-            <div id="minute-display">
-
-                <div class="digit" id="minutes-first-digit">
-
-                    <div class="row1">
-                        <div class="b" id="b1"></div>
-                        <div id="seg1"></div>
-                        <div class="b" id="b2"></div>
-                    </div>
-                    <div class="between">
-                        <div class="col" id="seg2"></div>
-                        <div class="col" id="seg3"></div>
-                    </div>
-                    <div class="row2">
-                        <div class="b" id="b3"></div>
-                        <div id="seg4"></div>
-                        <div class="b" id="b4"></div>
-                    </div>
-                    <div class="between">
-                        <div class="col" id="seg5"></div>
-                        <div class="col" id="seg6"></div>
-                    </div>
-                    <div class="row3">
-                        <div class="b" id="b5"></div>
-                        <div id="seg7"></div>
-                        <div class="b" id="b6"></div>
-                    </div>
-
+                 <div class="text">Analog Clock</div>
+             </button>
+ 
+             <button id="DigitalClock" onclick="window.location.href='digital-clock/index.html'">
+                 <div class="picture">
+                    <img src="images/Digital Clock.png" class = "image"></img>
                 </div>
+                 <div class="text">Digital Clock</div>
+             </button>
 
-                <div class="digit" id="minutes-second-digit">
-
-                    <div class="row1">
-                        <div class="b" id="b1"></div>
-                        <div id="seg1"></div>
-                        <div class="b" id="b2"></div>
-                    </div>
-                    <div class="between">
-                        <div class="col" id="seg2"></div>
-                        <div class="col" id="seg3"></div>
-                    </div>
-                    <div class="row2">
-                        <div class="b" id="b3"></div>
-                        <div id="seg4"></div>
-                        <div class="b" id="b4"></div>
-                    </div>
-                    <div class="between">
-                        <div class="col" id="seg5"></div>
-                        <div class="col" id="seg6"></div>
-                    </div>
-                    <div class="row3">
-                        <div class="b" id="b5"></div>
-                        <div id="seg7"></div>
-                        <div class="b" id="b6"></div>
-                    </div>
-
+             <button id="TicTacToe" onclick="window.location.href='TicTacToe/index.html'">
+                <div class="picture">
+                    <img src="images/TicTacToe.png" class = "image"></img>
                 </div>
+                <div class="text">Tic Tac Toe</div>
+             </button>
+ 
+             <button id="Dots" onclick="window.location.href='dots-game/index.html'">
+                 <div class="picture">
+                    <img src="images/Dots game.png" class = "image"></img>
+                </div>
+                 <div class="text">Dots</div>
+             </button>
+ 
+             <button id="TBD2">
+                 <div class="picture"></div>
+                 <div class="text">Coming soon</div>
+             </button>
 
-            </div>
+        </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple game of Tic Tac Toe">
+    <title>Tic Tac Toe</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <p class="instructions">Tap on a box to play.</p>
+        <p><b>Player X</b> starts, followed by <b>Player O</b>.</p>
+            
+        <div class = "board">
+            <div class = "row" id="row1">
+                <div class="box 1"></div>
+                <div class="box 2"></div>
+                <div class="box 3"></div>
+            </div>
+            <div class = "row" id="row2">
+                <div class="box 1"></div>
+                <div class="box 2" id="middle"></div>
+                <div class="box 3"></div>
+            </div>
+            <div class = "row" id="row3">
+                <div class="box 1"></div>
+                <div class="box 2"></div>
+                <div class="box 3"></div>
+            </div>
+        </div>   
+            
+        <b class="turn">Player <span>X</span>'s turn</b>
+        
+        <button onclick="location.reload()">Restart Game</button>
+    </div>
+        
+    <script src="trial1.js"></script>
+</body>
+</html>

@@ -1,129 +1,93 @@
-body {
+body{
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    height:100vh; 
     margin: 0;
-    background-color: #677D6A;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; 
-}
+    color: rgb(42, 42, 42);
 
+}
+ 
 .container {
-    width: 550px;
-    height: 225px;
-    background-color: #1e1e1e;
-    border: 30px solid black;
-    border-radius: 30px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 24px 58px rgba(0, 0, 0, .25);
-    transition: 0.1s;
-}
-
-#hour-display, #minute-display {
-    width: 220px;
-    height: 80%;
-    display: flex;
-    justify-content: space-between;
-}
-
-#colon {
-    width: 8%;
-    height: 62%;
+    width: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-.digit {
-    width: 100px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 
-.colon-dot {
-    width: 15px;
-    height: 15px;
-    background-color: rgba(255,0,0,0.15);
+#image {
+    margin-top: 120px;
+    width: 130px;
     border-radius: 50%;
-    transition: 0.1s;
+    transform: rotateZ(10deg);
+    border-width: 7px;
+    border-color: rgb(142, 205, 196);
+    border-style: solid;
 }
 
-.row1, .row2, .row3 {
-    transition: 0.1s;
+h1{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 55px;
+}
+
+p{
+    margin: 5px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+h3{
+    margin-top: 50px;
+    font-size: 24px;
+    align-self: flex-start;
+}
+
+.button-container{
     display: flex;
-}
-
-#seg1, #seg4, #seg7 {
-    width: 60px;
-    height: 20px;
-    background-color: rgba(255,0,0,0.15);
-    transition: 0.1s;
-}
-.b {
-    border: 10px solid;
-    transition: 0.1s;
-}
-
-
-#b1 {
-    border-bottom-color: rgba(255,0,0,0.15);
-    border-right-color: rgba(255,0,0,0.15);
-    border-top-color: transparent;
-    border-left-color: transparent;
-}
-
-#b2 {
-    border-bottom-color: rgba(255,0,0,0.15);
-    border-left-color: rgba(255,0,0,0.15);
-    border-top-color: transparent;
-    border-right-color: transparent;
-}
-
-#b3 {
-    border-bottom-color: rgba(255,0,0,0.15);
-    border-right-color: rgba(255,0,0,0.15);
-    border-top-color: rgba(255,0,0,0.15);
-    border-left-color: transparent;
-}
-
-#b4 {
-    border-bottom-color: rgba(255,0,0,0.15);
-    border-left-color: rgba(255,0,0,0.15);
-    border-top-color: rgba(255,0,0,0.15);
-    border-right-color: transparent;
-}
-
-#b5 {
-    border-right-color: rgba(255,0,0,0.15);
-    border-top-color: rgba(255,0,0,0.15);
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-}
-
-#b6 {
-    border-left-color: rgba(255,0,0,0.15);
-    border-top-color: rgba(255,0,0,0.15);
-    border-bottom-color: transparent;
-    border-right-color: transparent;
-}
-
-
-.between {
-    width: 100%;
-    height: 60px;
-    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
 }
 
-.col {
-    background-color: rgba(255,0,0,0.15);
-    width: 20px;
-    height: 60px;
-    z-index: 1;
-    transition: 0.1s;
+.button-container button{
+    width: 600px;
+    height: 150px; 
+    margin-bottom: 20px;
+    /* Make automatic padding of buttons disappear */
+    padding: 0px;
+    box-shadow: 0px 0px 15px 5px rgba(216, 216, 216, 0.73);
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
+
+button:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.picture {
+    width: 300px;
+    height: 100%;
+}
+
+.image {
+    width: 300px;
+}
+
+
+.text {
+    width: 50%;
+    height: 10px;
+    font-size: large;
+}
+
+
+
+ 
